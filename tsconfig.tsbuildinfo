@@ -1,1 +1,0 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/archetypepicker.tsx","./src/engine/scoring.test.ts","./src/engine/scoring.ts","./src/engine/types.ts","./src/pages/agentpage.tsx","./src/pages/datepage.tsx","./src/pages/home.tsx","./src/pages/scholarshipspage.tsx","./src/state/store.tsx","./vite.config.ts"],"version":"5.7.3"}
