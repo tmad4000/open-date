@@ -1,0 +1,100 @@
+[
+  {
+    "id": "kids",
+    "label": "Kids",
+    "filterable": true,
+    "values": [
+      { "id": "wants", "label": "wants kids" },
+      { "id": "open", "label": "open to kids" },
+      { "id": "no", "label": "doesn't want kids" },
+      { "id": "has", "label": "has kids" }
+    ]
+  },
+  {
+    "id": "goal",
+    "label": "Looking for",
+    "filterable": true,
+    "values": [
+      { "id": "longterm", "label": "long-term partner" },
+      { "id": "figuring", "label": "figuring it out" },
+      { "id": "casual", "label": "something casual" }
+    ]
+  },
+  {
+    "id": "distance",
+    "label": "Distance",
+    "filterable": true,
+    "values": [
+      { "id": "near", "label": "< 10 miles" },
+      { "id": "mid", "label": "10–40 miles" },
+      { "id": "far", "label": "40+ miles" }
+    ]
+  },
+  {
+    "id": "politics",
+    "label": "Politics",
+    "filterable": true,
+    "values": [
+      { "id": "progressive", "label": "progressive" },
+      { "id": "moderate", "label": "moderate" },
+      { "id": "conservative", "label": "conservative" },
+      { "id": "apolitical", "label": "not political" }
+    ]
+  },
+  {
+    "id": "religion",
+    "label": "Religion",
+    "filterable": true,
+    "values": [
+      { "id": "secular", "label": "secular" },
+      { "id": "spiritual", "label": "spiritual, not religious" },
+      { "id": "practicing", "label": "practicing" }
+    ]
+  },
+  {
+    "id": "lifestyle",
+    "label": "Lifestyle",
+    "filterable": true,
+    "values": [
+      { "id": "homebody", "label": "homebody" },
+      { "id": "balanced", "label": "in-between" },
+      { "id": "out-often", "label": "out most nights" },
+      { "id": "outdoorsy", "label": "outdoorsy" }
+    ]
+  },
+  {
+    "id": "conversation",
+    "label": "Conversation style",
+    "filterable": true,
+    "values": [
+      { "id": "deep", "label": "deep dives" },
+      { "id": "playful", "label": "playful banter" },
+      { "id": "direct", "label": "direct and practical" },
+      { "id": "slow", "label": "slow burner" }
+    ]
+  },
+  {
+    "id": "values",
+    "label": "Values",
+    "filterable": true,
+    "values": [
+      { "id": "curiosity", "label": "curiosity" },
+      { "id": "ambition", "label": "ambition" },
+      { "id": "community", "label": "community" },
+      { "id": "creativity", "label": "creativity" },
+      { "id": "stability", "label": "stability" },
+      { "id": "adventure", "label": "adventure" },
+      { "id": "family", "label": "family" }
+    ]
+  },
+  {
+    "id": "effort",
+    "label": "Profile effort",
+    "filterable": false,
+    "values": [
+      { "id": "high", "label": "thoughtful, complete profile" },
+      { "id": "medium", "label": "decent profile" },
+      { "id": "low", "label": "sparse profile" }
+    ]
+  }
+]

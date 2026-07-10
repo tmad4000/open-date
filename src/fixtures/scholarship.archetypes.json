@@ -1,0 +1,55 @@
+[
+  {
+    "id": "first-gen-stem-transfer",
+    "domain": "scholarships",
+    "label": "First-gen STEM transfer",
+    "description": "First in the family, coming from community college into a STEM major.",
+    "seedFacts": {
+      "first-gen": "yes",
+      "stem-major": "yes",
+      "transfer-student": "yes",
+      "undergrad": "yes"
+    }
+  },
+  {
+    "id": "arts-community",
+    "domain": "scholarships",
+    "label": "Arts + community service",
+    "description": "Portfolio in hand, lots of volunteer hours, any major welcome.",
+    "seedFacts": {
+      "arts-portfolio": "yes",
+      "community-service": "yes",
+      "undergrad": "yes"
+    }
+  },
+  {
+    "id": "italian-heritage",
+    "domain": "scholarships",
+    "label": "Italian heritage",
+    "description": "At least one Italian grandparent — heritage awards open up.",
+    "seedFacts": {
+      "italian-quarter": "yes",
+      "undergrad": "yes"
+    }
+  },
+  {
+    "id": "rural-healthcare",
+    "domain": "scholarships",
+    "label": "Rural healthcare-bound",
+    "description": "From a rural county, headed toward nursing or pre-health.",
+    "seedFacts": {
+      "rural-resident": "yes",
+      "healthcare-track": "yes",
+      "undergrad": "yes"
+    }
+  },
+  {
+    "id": "blank-slate",
+    "domain": "scholarships",
+    "label": "Start from scratch",
+    "description": "No assumptions — answer facts as they come up.",
+    "seedFacts": {
+      "undergrad": "yes"
+    }
+  }
+]

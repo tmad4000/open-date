@@ -1,0 +1,335 @@
+[
+  {
+    "id": "p-marisol",
+    "domain": "dating",
+    "name": "Marisol, 31",
+    "tagline": "Urban planner who sketches strangers on the train (flatteringly).",
+    "attributes": {
+      "kids": "open",
+      "goal": "longterm",
+      "distance": "near",
+      "politics": "progressive",
+      "religion": "secular",
+      "lifestyle": "balanced",
+      "conversation": "deep",
+      "values": ["curiosity", "community", "creativity"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "A perfect Sunday looks like…", "answer": "Farmers market, a long walk with no destination, then cooking something ambitious that half-works." },
+      { "prompt": "I geek out on…", "answer": "Why some streets feel alive and others feel dead. I will point at benches. You've been warned." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-devon",
+    "domain": "dating",
+    "name": "Devon, 34",
+    "tagline": "ER nurse, half-marathoner, aggressively normal about fantasy novels.",
+    "attributes": {
+      "kids": "wants",
+      "goal": "longterm",
+      "distance": "mid",
+      "politics": "moderate",
+      "religion": "spiritual",
+      "lifestyle": "outdoorsy",
+      "conversation": "playful",
+      "values": ["family", "stability", "adventure"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "Two truths and a lie", "answer": "I've delivered a baby in a parking lot. I cried at a car commercial. I've read Wheel of Time twice. (The lie is that it was only twice.)" }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-june",
+    "domain": "dating",
+    "name": "June, 29",
+    "tagline": "Ceramicist with a day job in data. My mugs are load-bearing.",
+    "attributes": {
+      "kids": "no",
+      "goal": "figuring",
+      "distance": "near",
+      "politics": "progressive",
+      "religion": "secular",
+      "lifestyle": "homebody",
+      "conversation": "slow",
+      "values": ["creativity", "curiosity", "stability"],
+      "effort": "medium"
+    },
+    "prompts": [
+      { "prompt": "You should not go out with me if…", "answer": "You need someone who texts back fast. I make things with my hands and forget my phone exists. It's a feature." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-theo",
+    "domain": "dating",
+    "name": "Theo, 36",
+    "tagline": "High school physics teacher. Yes, I will explain the demo. No, it's not dangerous. Mostly.",
+    "attributes": {
+      "kids": "wants",
+      "goal": "longterm",
+      "distance": "near",
+      "politics": "moderate",
+      "religion": "practicing",
+      "lifestyle": "balanced",
+      "conversation": "deep",
+      "values": ["family", "community", "curiosity"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "My simple pleasures", "answer": "Chalk dust, the first sip of coffee during first period silence, and students who argue with me correctly." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-ravi",
+    "domain": "dating",
+    "name": "Ravi, 32",
+    "tagline": "Startup person in recovery; now I build furniture and sleep eight hours.",
+    "attributes": {
+      "kids": "open",
+      "goal": "figuring",
+      "distance": "mid",
+      "politics": "apolitical",
+      "religion": "secular",
+      "lifestyle": "homebody",
+      "conversation": "direct",
+      "values": ["stability", "creativity"],
+      "effort": "medium"
+    },
+    "prompts": [
+      { "prompt": "The way to win me over is…", "answer": "Ask me what I'm making. Then tell me what you're making. Everyone is making something." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-anouk",
+    "domain": "dating",
+    "name": "Anouk, 27",
+    "tagline": "Wildland firefighter half the year, couch scientist the other half.",
+    "attributes": {
+      "kids": "no",
+      "goal": "casual",
+      "distance": "far",
+      "politics": "progressive",
+      "religion": "spiritual",
+      "lifestyle": "outdoorsy",
+      "conversation": "playful",
+      "values": ["adventure", "curiosity"],
+      "effort": "medium"
+    },
+    "prompts": [
+      { "prompt": "Typical Tuesday", "answer": "Either digging a fire line on a ridge at dawn or watching six hours of deep-sea documentaries. There is no in-between." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-sam",
+    "domain": "dating",
+    "name": "Sam, 38",
+    "tagline": "Dad of one great kid. Bakes bread badly on purpose (crust practice).",
+    "attributes": {
+      "kids": "has",
+      "goal": "longterm",
+      "distance": "near",
+      "politics": "moderate",
+      "religion": "secular",
+      "lifestyle": "homebody",
+      "conversation": "direct",
+      "values": ["family", "stability", "community"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "Non-negotiables", "answer": "Kindness to waitstaff, showing up when you said you would, and letting me have Saturday mornings with my daughter." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-kaia",
+    "domain": "dating",
+    "name": "Kaia, 30",
+    "tagline": "Marine biologist. Will absolutely ruin octopus documentaries with facts.",
+    "attributes": {
+      "kids": "open",
+      "goal": "longterm",
+      "distance": "far",
+      "politics": "progressive",
+      "religion": "secular",
+      "lifestyle": "outdoorsy",
+      "conversation": "deep",
+      "values": ["curiosity", "adventure", "community"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "I geek out on…", "answer": "Cephalopod cognition. An octopus once judged me through glass and honestly? Fair." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-marcus",
+    "domain": "dating",
+    "name": "Marcus, 33",
+    "tagline": "Hey",
+    "attributes": {
+      "kids": "open",
+      "goal": "casual",
+      "distance": "near",
+      "politics": "apolitical",
+      "religion": "secular",
+      "lifestyle": "out-often",
+      "conversation": "playful",
+      "values": ["adventure"],
+      "effort": "low"
+    },
+    "prompts": [],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-elena",
+    "domain": "dating",
+    "name": "Elena, 35",
+    "tagline": "Immigration lawyer, choir alto, keeper of a chaotic group chat.",
+    "attributes": {
+      "kids": "wants",
+      "goal": "longterm",
+      "distance": "mid",
+      "politics": "progressive",
+      "religion": "practicing",
+      "lifestyle": "balanced",
+      "conversation": "deep",
+      "values": ["community", "family", "ambition"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "My simple pleasures", "answer": "Four-part harmony landing exactly right, and the specific silence in a courtroom right before good news." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-finn",
+    "domain": "dating",
+    "name": "Finn, 28",
+    "tagline": "Line cook turned pastry apprentice. Smells like butter, will not apologize.",
+    "attributes": {
+      "kids": "no",
+      "goal": "figuring",
+      "distance": "near",
+      "politics": "progressive",
+      "religion": "secular",
+      "lifestyle": "out-often",
+      "conversation": "playful",
+      "values": ["creativity", "adventure"],
+      "effort": "medium"
+    },
+    "prompts": [
+      { "prompt": "The way to win me over is…", "answer": "Eat the weird thing on the menu with me. Both weird things. All of them." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-priya",
+    "domain": "dating",
+    "name": "Priya, 31",
+    "tagline": "Product manager who actually likes her job (suspicious, I know). Trail runner.",
+    "attributes": {
+      "kids": "open",
+      "goal": "longterm",
+      "distance": "near",
+      "politics": "moderate",
+      "religion": "spiritual",
+      "lifestyle": "outdoorsy",
+      "conversation": "direct",
+      "values": ["ambition", "adventure", "stability"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "A perfect Sunday looks like…", "answer": "Ten miles of trail before nine, then absolutely nothing but a couch and a very long book." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-oskar",
+    "domain": "dating",
+    "name": "Oskar, 40",
+    "tagline": "Woodwind repair tech. I fix the thing your kid stepped on before the recital.",
+    "attributes": {
+      "kids": "has",
+      "goal": "longterm",
+      "distance": "far",
+      "politics": "conservative",
+      "religion": "practicing",
+      "lifestyle": "homebody",
+      "conversation": "slow",
+      "values": ["family", "stability", "community"],
+      "effort": "medium"
+    },
+    "prompts": [
+      { "prompt": "Non-negotiables", "answer": "Church on Sunday, dinner at the table, and patience — with instruments and with people." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-zee",
+    "domain": "dating",
+    "name": "Zee, 26",
+    "tagline": "Grad student in linguistics. Will notice how you say 'caramel' and say nothing (out loud).",
+    "attributes": {
+      "kids": "no",
+      "goal": "figuring",
+      "distance": "mid",
+      "politics": "progressive",
+      "religion": "secular",
+      "lifestyle": "balanced",
+      "conversation": "deep",
+      "values": ["curiosity", "creativity", "community"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "I geek out on…", "answer": "Why your grandmother's dialect is a national treasure and duolingo's owl is a cop." }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-hank",
+    "domain": "dating",
+    "name": "Hank, 37",
+    "tagline": "Sup. Gym, work, repeat.",
+    "attributes": {
+      "kids": "open",
+      "goal": "casual",
+      "distance": "far",
+      "politics": "apolitical",
+      "religion": "secular",
+      "lifestyle": "out-often",
+      "conversation": "direct",
+      "values": ["ambition"],
+      "effort": "low"
+    },
+    "prompts": [],
+    "source": "synthetic"
+  },
+  {
+    "id": "p-noor",
+    "domain": "dating",
+    "name": "Noor, 33",
+    "tagline": "Pediatric OT, community garden co-lead, human golden retriever energy.",
+    "attributes": {
+      "kids": "wants",
+      "goal": "longterm",
+      "distance": "near",
+      "politics": "moderate",
+      "religion": "practicing",
+      "lifestyle": "balanced",
+      "conversation": "playful",
+      "values": ["family", "community", "curiosity"],
+      "effort": "high"
+    },
+    "prompts": [
+      { "prompt": "Typical Tuesday", "answer": "Tiny humans throwing beanbags at me for therapeutic reasons, then watering tomatoes that belong to forty households." }
+    ],
+    "source": "synthetic"
+  }
+]

@@ -1,0 +1,18 @@
+[
+  { "id": "italian-quarter", "label": "At least 1/4 Italian heritage", "question": "Are you at least one-quarter Italian by descent?" },
+  { "id": "first-gen", "label": "First-generation college student", "question": "Are you the first in your immediate family to attend college?" },
+  { "id": "stem-major", "label": "Declared STEM major", "question": "Are you majoring in a STEM field?" },
+  { "id": "transfer-student", "label": "Community-college transfer", "question": "Are you transferring from a community college?" },
+  { "id": "gpa-30", "label": "GPA 3.0 or above", "question": "Is your GPA at least 3.0?" },
+  { "id": "gpa-35", "label": "GPA 3.5 or above", "question": "Is your GPA at least 3.5?" },
+  { "id": "rural-resident", "label": "Rural county resident", "question": "Do you live in a rural county?" },
+  { "id": "healthcare-track", "label": "Pre-health / nursing track", "question": "Are you on a pre-health or nursing track?" },
+  { "id": "arts-portfolio", "label": "Arts portfolio available", "question": "Do you have an arts portfolio you could submit?" },
+  { "id": "community-service", "label": "100+ hours community service", "question": "Have you completed 100+ hours of community service?" },
+  { "id": "financial-need", "label": "Demonstrated financial need (FAFSA)", "question": "Can you demonstrate financial need via FAFSA?" },
+  { "id": "woman-identifying", "label": "Woman-identifying applicant", "question": "Do you identify as a woman?" },
+  { "id": "veteran-family", "label": "Veteran or military family", "question": "Are you a veteran or from a military family?" },
+  { "id": "essay-ready", "label": "Willing to write a 500+ word essay", "question": "Are you willing to write a 500+ word essay?" },
+  { "id": "state-resident", "label": "In-state resident", "question": "Are you a resident of the awarding state?" },
+  { "id": "undergrad", "label": "Enrolled undergraduate", "question": "Are you (or will you be) an enrolled undergraduate?" }
+]

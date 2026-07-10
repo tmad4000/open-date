@@ -1,0 +1,47 @@
+{
+  "name": "open-date-agent-contract",
+  "version": "0.1.0",
+  "summary": "How an agent reads, reasons about, and writes back to an Open Date session.",
+  "paradigm": {
+    "name": "progressive fit filtering",
+    "loop": [
+      "seed a preference model (dating) or fact sheet (scholarships) from archetypes",
+      "rank/bucket all candidates with per-trait explanations",
+      "collect verdicts WITH reasons (like/pass/unsure + reason tags), or fact answers (yes/no/unknown)",
+      "fold events into the model — the journal is append-only and the model is always replayable from it",
+      "re-rank; show the user what changed and why"
+    ]
+  },
+  "entities": {
+    "Candidate": "a person (dating) or scholarship (scholarships); traits are facetId:valueId pairs in `attributes`; scholarships add `requirements` rows referencing shared fact ids",
+    "Facet": "a dimension with labeled values; `filterable` facets render as narrowing chips",
+    "Reason": "a feedback tag with model semantics: fixed `effects` (delta or veto on a traitKey) and/or `matchingFacets` (delta applied to the candidate's own values on that facet)",
+    "FeedbackEvent": "{id, ts, domain, candidateId, verdict: like|pass|unsure, reasonIds[], note?} — append-only journal",
+    "FactEvent": "{id, ts, factId, answer: yes|no|unknown} — scholarship-side journal",
+    "PreferenceModel": "{weights: {traitKey: number}, vetoes: traitKey[], archetypeIds[]} — derived, never authoritative; replay the journal to rebuild",
+    "ScoreResult": "{score, excluded, excludedBy[], contributions[{traitKey,label,amount}]} — full explanation of every ranking",
+    "FitResult": "{bucket: eligible|maybe|not-a-fit, rows[], wouldFitIf[{factId,question}]}"
+  },
+  "dataFiles": {
+    "dating.profiles.json": "16 synthetic profiles",
+    "dating.facets.json": "9 facets with labeled values",
+    "dating.reasons.json": "reason taxonomy with model effects",
+    "dating.archetypes.json": "5 starting archetypes (seed weights/vetoes)",
+    "scholarships.json": "12 synthetic scholarships with requirement rows",
+    "scholarship.facts.json": "16 shared facts referenced by requirements",
+    "scholarship.archetypes.json": "5 applicant archetypes (seed facts)"
+  },
+  "sessionState": {
+    "storage": "localStorage key `open-date:v1`",
+    "shape": "{ dating: {archetypeIds, events: FeedbackEvent[]}, scholarships: {archetypeIds, factEvents: FactEvent[]}, theme }",
+    "export": "the Agent page (/#/agent) renders the full session state as JSON with a copy button; the same JSON round-trips via the import box"
+  },
+  "agentTasks": {
+    "prefilter": "compute rankCandidates/bucketAll from the fixtures + an exported session state",
+    "explain": "read ScoreResult.contributions / FitResult.rows — never invent reasons not present in the model",
+    "clarify": "FitResult.wouldFitIf lists the exact open questions worth asking the user",
+    "extendFacets": "add new facets/values/reasons in fixtures; traitKey vocabulary is open",
+    "summarizeDrift": "diff PreferenceModel.weights across two exports to narrate preference drift"
+  },
+  "provenance": "All candidate and scholarship data is synthetic, generated for this MVP. No real persons, applicants, or awards."
+}

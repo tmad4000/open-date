@@ -1,0 +1,63 @@
+[
+  {
+    "id": "settle-down",
+    "domain": "dating",
+    "label": "Ready to build",
+    "description": "Long-term partner, family-minded, values stability and effort.",
+    "seedWeights": {
+      "goal:longterm": 2,
+      "values:stability": 1,
+      "values:family": 1,
+      "effort:high": 1,
+      "goal:casual": -2
+    }
+  },
+  {
+    "id": "curious-explorer",
+    "domain": "dating",
+    "label": "Curious explorer",
+    "description": "Deep conversation, curiosity, and creative energy over checklists.",
+    "seedWeights": {
+      "values:curiosity": 2,
+      "conversation:deep": 1.5,
+      "values:creativity": 1,
+      "effort:high": 1,
+      "effort:low": -1
+    }
+  },
+  {
+    "id": "outdoor-partner",
+    "domain": "dating",
+    "label": "Outdoor partner",
+    "description": "Weekends on trails; wants someone who actually goes outside.",
+    "seedWeights": {
+      "lifestyle:outdoorsy": 2,
+      "values:adventure": 1.5,
+      "lifestyle:homebody": -1,
+      "distance:near": 0.5
+    }
+  },
+  {
+    "id": "no-kids-childfree",
+    "domain": "dating",
+    "label": "Childfree by choice",
+    "description": "Certain about no kids; filters that up front instead of on date three.",
+    "seedWeights": {
+      "kids:no": 2,
+      "goal:longterm": 1
+    },
+    "seedVetoes": ["kids:wants"]
+  },
+  {
+    "id": "community-rooted",
+    "domain": "dating",
+    "label": "Community-rooted",
+    "description": "Values neighborhood, faith or civic life, and showing up for people.",
+    "seedWeights": {
+      "values:community": 2,
+      "values:family": 1,
+      "distance:near": 1,
+      "distance:far": -1
+    }
+  }
+]

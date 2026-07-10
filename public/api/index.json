@@ -1,0 +1,15 @@
+{
+  "name": "open-date",
+  "description": "Machine-readable fixtures for the Open Date progressive fit filtering engine. All data is synthetic.",
+  "contract": "/open-date/api/contract.json",
+  "files": [
+    "/open-date/api/contract.json",
+    "/open-date/api/dating.archetypes.json",
+    "/open-date/api/dating.facets.json",
+    "/open-date/api/dating.profiles.json",
+    "/open-date/api/dating.reasons.json",
+    "/open-date/api/scholarship.archetypes.json",
+    "/open-date/api/scholarship.facts.json",
+    "/open-date/api/scholarships.json"
+  ]
+}

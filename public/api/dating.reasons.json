@@ -1,0 +1,95 @@
+[
+  {
+    "id": "values-align",
+    "label": "our values align",
+    "appliesTo": ["like"],
+    "matchingFacets": [{ "facetId": "values", "delta": 1 }]
+  },
+  {
+    "id": "curious-mind",
+    "label": "curious mind",
+    "appliesTo": ["like"],
+    "effects": [{ "traitKey": "values:curiosity", "delta": 1.5 }]
+  },
+  {
+    "id": "good-prompts",
+    "label": "great prompt answers",
+    "appliesTo": ["like"],
+    "effects": [{ "traitKey": "effort:high", "delta": 1 }]
+  },
+  {
+    "id": "conversation-fit",
+    "label": "conversation style fits me",
+    "appliesTo": ["like"],
+    "matchingFacets": [{ "facetId": "conversation", "delta": 1.2 }]
+  },
+  {
+    "id": "lifestyle-fit",
+    "label": "lifestyle would mesh",
+    "appliesTo": ["like"],
+    "matchingFacets": [{ "facetId": "lifestyle", "delta": 1 }]
+  },
+  {
+    "id": "same-goals",
+    "label": "same relationship goals",
+    "appliesTo": ["like"],
+    "matchingFacets": [{ "facetId": "goal", "delta": 1.2 }]
+  },
+  {
+    "id": "wants-kids-db",
+    "label": "wants kids (dealbreaker for me)",
+    "appliesTo": ["pass"],
+    "effects": [{ "traitKey": "kids:wants", "veto": true }]
+  },
+  {
+    "id": "no-kids-db",
+    "label": "doesn't want kids (dealbreaker for me)",
+    "appliesTo": ["pass"],
+    "effects": [{ "traitKey": "kids:no", "veto": true }]
+  },
+  {
+    "id": "too-far",
+    "label": "too far away",
+    "appliesTo": ["pass"],
+    "effects": [{ "traitKey": "distance:far", "delta": -1.5 }]
+  },
+  {
+    "id": "low-effort",
+    "label": "low-effort profile",
+    "appliesTo": ["pass"],
+    "effects": [{ "traitKey": "effort:low", "delta": -1.5 }]
+  },
+  {
+    "id": "different-goals",
+    "label": "different relationship goals",
+    "appliesTo": ["pass"],
+    "matchingFacets": [{ "facetId": "goal", "delta": -1.2 }]
+  },
+  {
+    "id": "politics-mismatch",
+    "label": "politics don't mix",
+    "appliesTo": ["pass"],
+    "matchingFacets": [{ "facetId": "politics", "delta": -1.2 }]
+  },
+  {
+    "id": "lifestyle-clash",
+    "label": "lifestyles would clash",
+    "appliesTo": ["pass"],
+    "matchingFacets": [{ "facetId": "lifestyle", "delta": -1 }]
+  },
+  {
+    "id": "no-spark",
+    "label": "just no spark",
+    "appliesTo": ["pass"]
+  },
+  {
+    "id": "ask-later",
+    "label": "ask me again later",
+    "appliesTo": ["unsure"]
+  },
+  {
+    "id": "need-evidence",
+    "label": "need more evidence",
+    "appliesTo": ["unsure"]
+  }
+]

@@ -1,0 +1,76 @@
+# Open Date
+
+**Open-source progressive fit filtering.** Narrow down with *reasons*, not just swipes — demonstrated across two very different personal decisions sharing one explainable engine:
+
+- **`/date`** — dating discovery, more OKCupid than Tinder: deep profiles (values, dealbreakers, lifestyle, prompts), like/pass/unsure **with reasons**, an evolving preference model you can inspect, and a multi-session preference journal.
+- **`/scholarships`** — scholarship fit: mark eligibility facts ✓ ✗ ?, and one answer ("not ¼ Italian") knocks out every award that requires it. Buckets show *eligible*, *maybe*, *not a fit*, and exactly **what would make each one fit**.
+
+All data is synthetic. No real people, no real awards.
+
+## Live
+
+Deployed at **https://tmad4000.github.io/open-date/** (GitHub Pages, auto-deployed from `main`).
+
+## Run it
+
+```bash
+npm install
+npm run dev        # dev server on http://localhost:7643
+npm run build      # typecheck + production build to dist/
+npm test           # engine unit tests (vitest)
+npm run typecheck  # tsc only
+```
+
+No env vars, no backend, no accounts. Session state persists in `localStorage` (`open-date:v1`).
+
+## The paradigm
+
+Both verticals run the same loop (see `src/fixtures/contract.json` for the machine-readable version):
+
+1. **Seed** — archetypes set starting weights (dating) or facts (scholarships).
+2. **Rank** — every candidate scored/bucketed with per-factor explanations. No black box.
+3. **Judge with reasons** — verdicts carry reason tags that have model semantics (deltas, vetoes, "boost whatever this candidate's values are"). A bare swipe teaches almost nothing by design.
+4. **Evolve** — feedback is an append-only journal; the model is always replayable from it. The UI shows exactly what each judgment changed.
+5. **Repeat** — sessions persist; agents can export, explain, clarify, and extend.
+
+The dating side folds **FeedbackEvents** (like/pass/unsure + reasons) into weighted trait preferences with hard vetoes. The scholarship side folds **FactEvents** (yes/no/unknown) into a fact sheet checked against requirement rows. Same trait vocabulary (`facetId:valueId`), same explanation shape, same journal-first architecture — that's the shared engine in `src/engine/`.
+
+## Architecture
+
+```
+src/
+  engine/          pure TypeScript, no React — types, scoring, fit bucketing, replay
+    types.ts       Candidate, Facet, Reason, FeedbackEvent, PreferenceModel, FitResult…
+    scoring.ts     seedModel / applyFeedback / replayFeedback / rankCandidates /
+                   fitCandidate / bucketAll — all pure functions
+    scoring.test.ts  16 unit tests
+  fixtures/        synthetic seed data, JSON (single source of truth)
+  state/store.tsx  React context + localStorage persistence; models derived by replay
+  pages/           Home, DatePage, ScholarshipsPage, AgentPage
+  components/      shared UI
+scripts/sync-fixtures.mjs  copies fixtures → public/api/ at build time
+```
+
+Routes are hash-based (`/#/date`, `/#/scholarships`, `/#/agent`) so GitHub Pages needs no rewrite rules.
+
+## Agent contract
+
+Open Date is built to let agents participate — prefilter, explain rankings, ask the open questions, summarize preference drift, and propose new facets.
+
+- **Static JSON**: every fixture is served under `api/` on the deployed site (e.g. [`api/contract.json`](https://tmad4000.github.io/open-date/api/contract.json), `api/dating.profiles.json`, `api/scholarships.json`, `api/index.json` for the directory).
+- **Contract**: `src/fixtures/contract.json` documents entities, the loop, session-state shape, and sanctioned agent tasks.
+- **Export/import**: the `/#/agent` page renders the full session state as JSON (copy button), a paste-into-any-agent **agent brief**, and an import box that round-trips exports.
+- **Replayability**: journals are the source of truth. Any agent can rebuild the preference model with `replayFeedback(seedModel(archetypes), events, candidates, reasons)` — deterministic and order-stable by timestamp.
+- **Explainability rule**: explanations must come from `ScoreResult.contributions` / `FitResult.rows`. Don't invent reasons the model doesn't hold.
+
+See also [`AGENTS.md`](AGENTS.md) for a working brief aimed at coding agents.
+
+## Extending
+
+- **New facet/reason/archetype**: edit the JSON fixtures — the `facetId:valueId` trait vocabulary is open; reasons compose from fixed `effects` (delta/veto on a trait) and `matchingFacets` (delta applied to the candidate's own values).
+- **New vertical**: provide candidates + facets (+ requirements/facts if checklist-style), reuse the engine unchanged. Jobs, apartments, grants, colleges all fit the shape.
+- **Version**: shown in the footer, sourced from `package.json` at build time.
+
+## License
+
+MIT.

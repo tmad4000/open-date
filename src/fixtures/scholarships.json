@@ -1,0 +1,182 @@
+[
+  {
+    "id": "s-sons-of-italy",
+    "domain": "scholarships",
+    "name": "Sons of Italy Heritage Grant",
+    "tagline": "$4,000 — for undergraduates of Italian descent with strong academics.",
+    "attributes": { "amount": "4000", "field": "any" },
+    "details": { "award": "$4,000", "deadline": "March 1", "field": "Any field" },
+    "requirements": [
+      { "factId": "italian-quarter", "label": "At least 1/4 Italian heritage", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "gpa-30", "label": "GPA 3.0+", "required": true },
+      { "factId": "essay-ready", "label": "Heritage essay (500 words)", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-first-gen-stem",
+    "domain": "scholarships",
+    "name": "First Horizon STEM Award",
+    "tagline": "$10,000 — first-generation students entering STEM programs.",
+    "attributes": { "amount": "10000", "field": "stem" },
+    "details": { "award": "$10,000", "deadline": "February 15", "field": "STEM" },
+    "requirements": [
+      { "factId": "first-gen", "label": "First-generation college student", "required": true },
+      { "factId": "stem-major", "label": "Declared STEM major", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "gpa-30", "label": "GPA 3.0+", "required": true },
+      { "factId": "financial-need", "label": "FAFSA financial need", "required": false }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-transfer-bridge",
+    "domain": "scholarships",
+    "name": "Transfer Bridge Fellowship",
+    "tagline": "$6,500 — community-college transfers finishing a bachelor's.",
+    "attributes": { "amount": "6500", "field": "any" },
+    "details": { "award": "$6,500", "deadline": "April 30", "field": "Any field" },
+    "requirements": [
+      { "factId": "transfer-student", "label": "Community-college transfer", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "gpa-30", "label": "GPA 3.0+", "required": true },
+      { "factId": "essay-ready", "label": "Personal statement", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-rural-health",
+    "domain": "scholarships",
+    "name": "Rural Health Pipeline Scholarship",
+    "tagline": "$12,000 — rural students headed into healthcare.",
+    "attributes": { "amount": "12000", "field": "health" },
+    "details": { "award": "$12,000", "deadline": "January 31", "field": "Healthcare / Nursing" },
+    "requirements": [
+      { "factId": "rural-resident", "label": "Rural county resident", "required": true },
+      { "factId": "healthcare-track", "label": "Pre-health or nursing track", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "gpa-30", "label": "GPA 3.0+", "required": true },
+      { "factId": "community-service", "label": "Community service history", "required": false }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-arts-service",
+    "domain": "scholarships",
+    "name": "Creative Citizens Award",
+    "tagline": "$5,000 — artists with a record of community service.",
+    "attributes": { "amount": "5000", "field": "arts" },
+    "details": { "award": "$5,000", "deadline": "May 15", "field": "Visual & performing arts" },
+    "requirements": [
+      { "factId": "arts-portfolio", "label": "Portfolio submission", "required": true },
+      { "factId": "community-service", "label": "100+ hours community service", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "essay-ready", "label": "Artist statement", "required": false }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-women-engineering",
+    "domain": "scholarships",
+    "name": "Ada Fund for Women in Engineering",
+    "tagline": "$15,000 — women pursuing engineering degrees, GPA 3.5+.",
+    "attributes": { "amount": "15000", "field": "stem" },
+    "details": { "award": "$15,000", "deadline": "March 20", "field": "Engineering" },
+    "requirements": [
+      { "factId": "woman-identifying", "label": "Woman-identifying applicant", "required": true },
+      { "factId": "stem-major", "label": "Engineering / STEM major", "required": true },
+      { "factId": "gpa-35", "label": "GPA 3.5+", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-veteran-legacy",
+    "domain": "scholarships",
+    "name": "Veteran Legacy Scholarship",
+    "tagline": "$8,000 — veterans and children of military families.",
+    "attributes": { "amount": "8000", "field": "any" },
+    "details": { "award": "$8,000", "deadline": "June 1", "field": "Any field" },
+    "requirements": [
+      { "factId": "veteran-family", "label": "Veteran or military family", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "essay-ready", "label": "Service reflection essay", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-state-merit",
+    "domain": "scholarships",
+    "name": "State Merit Tuition Grant",
+    "tagline": "$3,000 — in-state undergraduates with a 3.5 GPA.",
+    "attributes": { "amount": "3000", "field": "any" },
+    "details": { "award": "$3,000", "deadline": "Rolling", "field": "Any field" },
+    "requirements": [
+      { "factId": "state-resident", "label": "In-state resident", "required": true },
+      { "factId": "gpa-35", "label": "GPA 3.5+", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-need-first",
+    "domain": "scholarships",
+    "name": "Open Door Need-Based Award",
+    "tagline": "$7,500 — any field, need-based, essay optional.",
+    "attributes": { "amount": "7500", "field": "any" },
+    "details": { "award": "$7,500", "deadline": "February 1", "field": "Any field" },
+    "requirements": [
+      { "factId": "financial-need", "label": "FAFSA financial need", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "gpa-30", "label": "GPA 3.0+", "required": false },
+      { "factId": "essay-ready", "label": "Optional essay", "required": false }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-first-gen-any",
+    "domain": "scholarships",
+    "name": "Trailblazer First-Gen Grant",
+    "tagline": "$5,500 — first-gen students in any major, service-minded.",
+    "attributes": { "amount": "5500", "field": "any" },
+    "details": { "award": "$5,500", "deadline": "April 1", "field": "Any field" },
+    "requirements": [
+      { "factId": "first-gen", "label": "First-generation college student", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "community-service", "label": "Community service", "required": true },
+      { "factId": "essay-ready", "label": "Personal essay", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-rural-stem",
+    "domain": "scholarships",
+    "name": "Heartland STEM Futures",
+    "tagline": "$9,000 — rural students in STEM, transfer-friendly.",
+    "attributes": { "amount": "9000", "field": "stem" },
+    "details": { "award": "$9,000", "deadline": "March 10", "field": "STEM" },
+    "requirements": [
+      { "factId": "rural-resident", "label": "Rural county resident", "required": true },
+      { "factId": "stem-major", "label": "Declared STEM major", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true },
+      { "factId": "transfer-student", "label": "Transfer pathway", "required": false },
+      { "factId": "gpa-30", "label": "GPA 3.0+", "required": true }
+    ],
+    "source": "synthetic"
+  },
+  {
+    "id": "s-arts-italian",
+    "domain": "scholarships",
+    "name": "Da Vinci Arts & Heritage Prize",
+    "tagline": "$6,000 — Italian-heritage students in visual arts.",
+    "attributes": { "amount": "6000", "field": "arts" },
+    "details": { "award": "$6,000", "deadline": "May 1", "field": "Visual arts" },
+    "requirements": [
+      { "factId": "italian-quarter", "label": "Italian heritage (1/4+)", "required": true },
+      { "factId": "arts-portfolio", "label": "Portfolio submission", "required": true },
+      { "factId": "undergrad", "label": "Enrolled undergraduate", "required": true }
+    ],
+    "source": "synthetic"
+  }
+]
