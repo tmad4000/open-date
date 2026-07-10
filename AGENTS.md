@@ -33,4 +33,4 @@ Smoke routes: `/#/` (home), `/#/date`, `/#/scholarships`, `/#/agent`. All render
 
 ## Deploy
 
-GitHub Pages via `.github/workflows/deploy.yml` — builds on push to `main`, publishes `dist/`. Live at https://tmad4000.github.io/open-date/. Vite `base` is `/open-date/` in production; keep hash routing so Pages needs no rewrites.
+GitHub Pages via `.github/workflows/deploy.yml` — builds on push to `main`, publishes `dist/`. Live at https://jacobcole.ai/open-date/ (custom domain on the tmad4000 user site). Vite `base` is `/open-date/` in production; keep hash routing so Pages needs no rewrites.

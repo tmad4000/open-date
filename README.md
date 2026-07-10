@@ -9,7 +9,7 @@ All data is synthetic. No real people, no real awards.
 
 ## Live
 
-Deployed at **https://tmad4000.github.io/open-date/** (GitHub Pages, auto-deployed from `main`).
+Deployed at **https://jacobcole.ai/open-date/** (GitHub Pages, auto-deployed from `main`; `tmad4000.github.io/open-date/` redirects here).
 
 ## Run it
 
@@ -57,7 +57,7 @@ Routes are hash-based (`/#/date`, `/#/scholarships`, `/#/agent`) so GitHub Pages
 
 Open Date is built to let agents participate — prefilter, explain rankings, ask the open questions, summarize preference drift, and propose new facets.
 
-- **Static JSON**: every fixture is served under `api/` on the deployed site (e.g. [`api/contract.json`](https://tmad4000.github.io/open-date/api/contract.json), `api/dating.profiles.json`, `api/scholarships.json`, `api/index.json` for the directory).
+- **Static JSON**: every fixture is served under `api/` on the deployed site (e.g. [`api/contract.json`](https://jacobcole.ai/open-date/api/contract.json), `api/dating.profiles.json`, `api/scholarships.json`, `api/index.json` for the directory).
 - **Contract**: `src/fixtures/contract.json` documents entities, the loop, session-state shape, and sanctioned agent tasks.
 - **Export/import**: the `/#/agent` page renders the full session state as JSON (copy button), a paste-into-any-agent **agent brief**, and an import box that round-trips exports.
 - **Replayability**: journals are the source of truth. Any agent can rebuild the preference model with `replayFeedback(seedModel(archetypes), events, candidates, reasons)` — deterministic and order-stable by timestamp.
