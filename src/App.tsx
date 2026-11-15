@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { NavLink, Route, Routes } from 'react-router-dom'
 import { useStore, type Theme } from './state/store'
 import Home from './pages/Home'
@@ -10,6 +11,14 @@ const THEME_ICON: Record<Theme, string> = { system: '◐ auto', dark: '● dark'
 
 export default function App() {
   const { state, setTheme } = useStore()
+  useEffect(() => {
+    const loader = document.createElement('script')
+    loader.src = 'https://worldissuetracker.com/widget/wit-feedback.js'
+    loader.defer = true
+    Object.assign(loader.dataset, { trackerSlug: 'open-date-feedback', app: 'Open Date', mode: 'feedback', mountSelector: '#wit-feedback-mount', trigger: 'tab', label: 'Send feedback' })
+    document.body.appendChild(loader)
+    return () => { loader.remove() }
+  }, [])
   return (
     <div className="shell">
       <header className="masthead">
@@ -53,6 +62,7 @@ export default function App() {
       </main>
       <footer className="footer">
         <span className="version-stamp">v{__APP_VERSION__}</span>
+        <span id="wit-feedback-mount" />
         <span>open source · MIT</span>
         <a href="https://github.com/tmad4000/open-date">github.com/tmad4000/open-date</a>
         <span>all profiles &amp; scholarships are synthetic</span>
