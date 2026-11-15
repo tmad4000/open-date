@@ -12,6 +12,12 @@ const THEME_ICON: Record<Theme, string> = { system: '◐ auto', dark: '● dark'
 export default function App() {
   const { state, setTheme } = useStore()
   useEffect(() => {
+    if (!document.querySelector('script[data-app-stamp-loader]')) {
+      const stamp = document.createElement('script')
+      stamp.src = import.meta.env.BASE_URL + 'app-stamp.js'
+      stamp.dataset.appStampLoader = 'true'
+      document.body.appendChild(stamp)
+    }
     const loader = document.createElement('script')
     loader.src = 'https://worldissuetracker.com/widget/wit-feedback.js'
     loader.defer = true
@@ -61,8 +67,11 @@ export default function App() {
         </Routes>
       </main>
       <footer className="footer">
-        <span className="version-stamp">v{__APP_VERSION__}</span>
-        <span id="wit-feedback-mount" />
+        <div className="footer-release">
+          <span id="wit-feedback-mount" />
+          <span aria-hidden="true"> · </span>
+          <span data-app-stamp data-src={import.meta.env.BASE_URL + 'version.json'} />
+        </div>
         <span>open source · MIT</span>
         <a href="https://github.com/tmad4000/open-date">github.com/tmad4000/open-date</a>
         <span>all profiles &amp; scholarships are synthetic</span>

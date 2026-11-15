@@ -1,7 +1,7 @@
 {
   "name": "open-date",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Open-source progressive fit filtering — dating discovery and scholarship fit sharing one explainable engine.",
   "license": "MIT",
